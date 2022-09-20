@@ -7,8 +7,5 @@ So probably there are better solutions.
 I will happy if you tell me your opinions.
 ##
 Tool
-I use the RoadMap in this Link <https://github.com/cs-MohamedAyman/Problem-Solving-Training>
-*Linux(Ubuntu)
-*Visual Studio Code
-*dotnet framework
+I use the RoadMap in this Link <https://github.com/cs-MohamedAyman/Problem-Solving-Training>,Linux(Ubuntu),Visual Studio Code,dotnet framework
 
