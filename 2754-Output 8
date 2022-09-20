@@ -1,0 +1,61 @@
+Link<https://www.beecrowd.com.br/judge/en/problems/view/2754>
+#
+Solution
+#
+'''
+using System;
+using System.Globalization;
+
+namespace hello
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            //declare two variable in (double) data type
+            double firstVar = 234.345;
+            double secondVar  = 45.698;
+
+
+            //Print the two variables to six decimal places
+            //take object called "setPrecision" from class called "NumberFormatInfo" in library called "Globalization" 
+            NumberFormatInfo setPrecision = new NumberFormatInfo();
+            //assign the attribute "NumberDecimalDigits" in the object "setPrecision"
+            setPrecision.NumberDecimalDigits = 6;
+            //print two variable after convert it to string to let me control the number of percision
+            Console.WriteLine(firstVar.ToString("N",setPrecision)+ " - " + secondVar.ToString("N",setPrecision));
+            
+
+            //Print the two variables with no decimal places
+            //we used Round method from Math library to round numbers up
+            Console.WriteLine(Math.Round(firstVar) + " - " + Math.Round(secondVar));
+
+
+            //Print the two variables with a decimal
+            //we used Round method from Math library to round numbers up and controled number of digit
+            Console.WriteLine(Math.Round(firstVar,1) + " - " + Math.Round(secondVar,1));
+
+
+            //Print the two variables with two decimal places;
+            setPrecision.NumberDecimalDigits = 2;
+            Console.WriteLine(Math.Round(firstVar,2) + " - " + Math.Round(secondVar,1).ToString("N",setPrecision));
+
+
+            //Print the two variables with three decimal places;
+            setPrecision.NumberDecimalDigits = 3;
+            Console.WriteLine(firstVar.ToString("N",setPrecision)+ " - " + secondVar.ToString("N",setPrecision));
+ 
+            //Print the two variables with scientific notation with 'e'
+            Console.WriteLine(firstVar.ToString("#.#####0e+00") + " - " + secondVar.ToString("#.####00e+00"));
+            //Print the two variables with scientific notation with 'E'
+            Console.WriteLine(firstVar.ToString("#.#####0E+00") + " - " + secondVar.ToString("#.####00E+00"));
+
+
+            //Print the two variables with use the shortest representation, with 'e' or 'E' or without;
+            Console.WriteLine(firstVar + " - " + secondVar);
+            Console.WriteLine(firstVar + " - " + secondVar);
+        }
+        
+    }
+}
+'''
