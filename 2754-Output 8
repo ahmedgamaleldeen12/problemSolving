@@ -1,8 +1,7 @@
 Link<https://www.beecrowd.com.br/judge/en/problems/view/2754>
-#
-Solution
-#
-'''
+
+<Solution>
+
 using System;
 using System.Globalization;
 
@@ -58,4 +57,3 @@ namespace hello
         
     }
 }
-'''
